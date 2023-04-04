@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="bpg_nino_mtavruli_bold.ttf">
+            <string>BPGNinoMtavruli-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="WelcomeCollectionViewCell" customModule="Final_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="299" height="459"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="299" height="459"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tzb-My-CQK">
+                        <rect key="frame" x="0.0" y="0.0" width="299" height="459"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="bHo-sk-Py3">
+                                <rect key="frame" x="0.0" y="0.0" width="299" height="357.66666666666669"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="85Z-OT-3hW">
+                                <rect key="frame" x="10" y="372.66666666666669" width="279" height="71.333333333333314"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="jO3-oN-flG">
+                                        <rect key="frame" x="0.0" y="0.0" width="279" height="32.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="BPGNinoMtavruli-Bold" family="BPG Nino Mtavruli" pointSize="28"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="CVR-p3-exx">
+                                        <rect key="frame" x="0.0" y="42.333333333333314" width="279" height="29"/>
+                                        <fontDescription key="fontDescription" name="BPGNinoMtavruli-Bold" family="BPG Nino Mtavruli" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jO3-oN-flG" firstAttribute="leading" secondItem="85Z-OT-3hW" secondAttribute="leading" id="56f-xB-IEq"/>
+                                    <constraint firstItem="CVR-p3-exx" firstAttribute="leading" secondItem="85Z-OT-3hW" secondAttribute="leading" id="8WO-5W-g85"/>
+                                    <constraint firstItem="jO3-oN-flG" firstAttribute="top" secondItem="85Z-OT-3hW" secondAttribute="top" id="DMb-MR-Uvq"/>
+                                    <constraint firstAttribute="bottom" secondItem="CVR-p3-exx" secondAttribute="bottom" id="KfS-xZ-0mg"/>
+                                    <constraint firstAttribute="trailing" secondItem="CVR-p3-exx" secondAttribute="trailing" id="XtF-X2-ByU"/>
+                                    <constraint firstAttribute="trailing" secondItem="jO3-oN-flG" secondAttribute="trailing" id="Yir-5P-JpB"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="bHo-sk-Py3" secondAttribute="trailing" id="Jrg-h9-8AW"/>
+                            <constraint firstItem="85Z-OT-3hW" firstAttribute="leading" secondItem="tzb-My-CQK" secondAttribute="leading" constant="10" id="Kqj-Hn-Htz"/>
+                            <constraint firstItem="bHo-sk-Py3" firstAttribute="top" secondItem="tzb-My-CQK" secondAttribute="top" id="M91-0V-gbu"/>
+                            <constraint firstAttribute="bottom" secondItem="85Z-OT-3hW" secondAttribute="bottom" constant="15" id="Rbc-U8-7sl"/>
+                            <constraint firstItem="85Z-OT-3hW" firstAttribute="top" secondItem="bHo-sk-Py3" secondAttribute="bottom" constant="15" id="XO7-5t-6ol"/>
+                            <constraint firstAttribute="trailing" secondItem="85Z-OT-3hW" secondAttribute="trailing" constant="10" id="hXg-pJ-XmB"/>
+                            <constraint firstItem="bHo-sk-Py3" firstAttribute="leading" secondItem="tzb-My-CQK" secondAttribute="leading" id="y5k-DY-gbq"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="tzb-My-CQK" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="DjV-B1-ivn"/>
+                <constraint firstAttribute="trailing" secondItem="tzb-My-CQK" secondAttribute="trailing" id="ZWo-ad-ZuD"/>
+                <constraint firstItem="tzb-My-CQK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="oG0-0d-VjP"/>
+                <constraint firstAttribute="bottom" secondItem="tzb-My-CQK" secondAttribute="bottom" id="pYF-hH-pnA"/>
+            </constraints>
+            <size key="customSize" width="299" height="459"/>
+            <connections>
+                <outlet property="slideDescriptionLbl" destination="CVR-p3-exx" id="KTf-z9-SMg"/>
+                <outlet property="slideImageView" destination="bHo-sk-Py3" id="scb-ar-sHd"/>
+                <outlet property="slideTitleLbl" destination="jO3-oN-flG" id="7St-ej-Kdk"/>
+            </connections>
+            <point key="canvasLocation" x="180.91603053435114" y="163.02816901408451"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

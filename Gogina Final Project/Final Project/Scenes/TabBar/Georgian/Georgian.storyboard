@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Georgian View Controller-->
+        <scene sceneID="OfZ-u9-3rS">
+            <objects>
+                <viewController storyboardIdentifier="Georgian" id="4pa-tC-EYA" customClass="GeorgianViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4XW-Jb-yYk">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Ew-YV-4wc">
+                                <rect key="frame" x="10" y="113.00000000000001" width="373" height="34.666666666666671"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="ქართული">
+                                        <attributes>
+                                            <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                            <font key="NSFont" size="30" name="BPGNinoMtavruli-Bold"/>
+                                            <font key="NSOriginalFont" size="30" name="HelveticaNeue-Bold"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" firstLineHeadIndent="20" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="E66-CD-Bo6">
+                                <rect key="frame" x="0.0" y="157.66666666666669" width="393" height="660.33333333333326"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="j6S-zp-F1b"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="j6S-zp-F1b" firstAttribute="trailing" secondItem="4Ew-YV-4wc" secondAttribute="trailing" constant="10" id="1bL-vD-iAC"/>
+                            <constraint firstItem="j6S-zp-F1b" firstAttribute="trailing" secondItem="E66-CD-Bo6" secondAttribute="trailing" id="BCJ-z1-fzz"/>
+                            <constraint firstItem="4Ew-YV-4wc" firstAttribute="top" secondItem="j6S-zp-F1b" secondAttribute="top" constant="10" id="GLo-pU-ltz"/>
+                            <constraint firstItem="4Ew-YV-4wc" firstAttribute="leading" secondItem="j6S-zp-F1b" secondAttribute="leading" constant="10" id="R9b-bg-swO"/>
+                            <constraint firstItem="E66-CD-Bo6" firstAttribute="leading" secondItem="j6S-zp-F1b" secondAttribute="leading" id="ZeY-YQ-Hbr"/>
+                            <constraint firstItem="E66-CD-Bo6" firstAttribute="top" secondItem="4Ew-YV-4wc" secondAttribute="bottom" constant="10" id="a2u-Rk-onF"/>
+                            <constraint firstItem="j6S-zp-F1b" firstAttribute="bottom" secondItem="E66-CD-Bo6" secondAttribute="bottom" id="lxh-VT-RUA"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="RJD-wj-9oU"/>
+                    <connections>
+                        <outlet property="tableView" destination="E66-CD-Bo6" id="P22-U3-gM1"/>
+                        <outlet property="titleLabel" destination="4Ew-YV-4wc" id="cmt-YJ-OOY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hFy-3q-aPv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707.63358778625957" y="281.69014084507046"/>
+        </scene>
+        <!--Georgian-->
+        <scene sceneID="lI5-mY-u4L">
+            <objects>
+                <navigationController storyboardIdentifier="GeorgianNC" automaticallyAdjustsScrollViewInsets="NO" id="Dgc-Uf-sg3" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Georgian" image="recipe-book" id="s7r-nC-F8c"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="smA-dx-4Tc">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="4pa-tC-EYA" kind="relationship" relationship="rootViewController" id="wMH-T8-nUw"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8xa-hZ-342" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217.55725190839695" y="281.69014084507046"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="recipe-book" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Favorites View Controller-->
+        <scene sceneID="s3n-Qs-bXu">
+            <objects>
+                <viewController storyboardIdentifier="Favorites" id="KPe-x4-MTM" customClass="FavoritesViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="V0t-Ti-JwJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="fyw-US-mmk">
+                                <rect key="frame" x="0.0" y="153" width="393" height="665"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-6b-5ur">
+                                <rect key="frame" x="0.0" y="103" width="393" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="y3Q-YD-LqD"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Cocktails"/>
+                                    <segment title="Meals"/>
+                                    <segment title="Georgian"/>
+                                </segments>
+                                <connections>
+                                    <action selector="selectCategory:" destination="KPe-x4-MTM" eventType="valueChanged" id="P6p-OC-4Fu"/>
+                                </connections>
+                            </segmentedControl>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6SK-oj-mrU"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6SK-oj-mrU" firstAttribute="bottom" secondItem="fyw-US-mmk" secondAttribute="bottom" id="Btm-F9-Usc"/>
+                            <constraint firstItem="fyw-US-mmk" firstAttribute="top" secondItem="0XM-6b-5ur" secondAttribute="bottom" id="C7K-z5-0Id"/>
+                            <constraint firstItem="6SK-oj-mrU" firstAttribute="trailing" secondItem="fyw-US-mmk" secondAttribute="trailing" id="Yrg-3L-Hsl"/>
+                            <constraint firstItem="0XM-6b-5ur" firstAttribute="leading" secondItem="6SK-oj-mrU" secondAttribute="leading" id="kF9-Kh-txM"/>
+                            <constraint firstItem="6SK-oj-mrU" firstAttribute="trailing" secondItem="0XM-6b-5ur" secondAttribute="trailing" id="kna-0X-7XB"/>
+                            <constraint firstItem="0XM-6b-5ur" firstAttribute="top" secondItem="6SK-oj-mrU" secondAttribute="top" id="ocZ-rv-iRs"/>
+                            <constraint firstItem="fyw-US-mmk" firstAttribute="leading" secondItem="6SK-oj-mrU" secondAttribute="leading" id="uoV-Qg-UKc"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="mVt-0G-7et"/>
+                    <connections>
+                        <outlet property="segmentedOutlet" destination="0XM-6b-5ur" id="hbf-6w-MbV"/>
+                        <outlet property="tableView" destination="fyw-US-mmk" id="Eha-x3-n07"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Aj-xQ-cdU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="579.38931297709917" y="448.59154929577466"/>
+        </scene>
+        <!--Favorites-->
+        <scene sceneID="arK-Pq-08o">
+            <objects>
+                <navigationController storyboardIdentifier="FavoritesNC" automaticallyAdjustsScrollViewInsets="NO" id="Ngr-Cr-JXE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Favorites" image="heart.fill" catalog="system" id="wZv-tT-gR7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Mqb-Ib-qYB">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="KPe-x4-MTM" kind="relationship" relationship="rootViewController" id="HGX-MN-mJA"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="87D-zT-h4e" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-347.32824427480915" y="448.59154929577466"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart.fill" catalog="system" width="128" height="107"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Meals View Controller-->
+        <scene sceneID="FZC-I0-siC">
+            <objects>
+                <viewController storyboardIdentifier="Meals" id="SUG-cQ-CBW" customClass="MealsViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="c4m-gw-vYM">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="Dgc-NZ-vnp">
+                                <rect key="frame" x="0.0" y="103" width="393" height="51"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="uQS-HP-wwo"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="Seafood"/>
+                                    <segment title="Canadian"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didTapMealType:" destination="SUG-cQ-CBW" eventType="valueChanged" id="HYt-K9-kDu"/>
+                                </connections>
+                            </segmentedControl>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hr5-EH-SY2">
+                                <rect key="frame" x="0.0" y="153" width="393" height="665"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="amH-Jv-sLi"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Dgc-NZ-vnp" firstAttribute="leading" secondItem="amH-Jv-sLi" secondAttribute="leading" id="Hvh-l0-Tyf"/>
+                            <constraint firstItem="hr5-EH-SY2" firstAttribute="leading" secondItem="amH-Jv-sLi" secondAttribute="leading" id="NLr-Yi-Z11"/>
+                            <constraint firstItem="hr5-EH-SY2" firstAttribute="top" secondItem="Dgc-NZ-vnp" secondAttribute="bottom" id="Wjb-im-9Jg"/>
+                            <constraint firstItem="Dgc-NZ-vnp" firstAttribute="top" secondItem="amH-Jv-sLi" secondAttribute="top" id="n2u-fE-cZm"/>
+                            <constraint firstItem="amH-Jv-sLi" firstAttribute="trailing" secondItem="Dgc-NZ-vnp" secondAttribute="trailing" id="o7I-dX-7O6"/>
+                            <constraint firstItem="amH-Jv-sLi" firstAttribute="trailing" secondItem="hr5-EH-SY2" secondAttribute="trailing" id="qCm-rf-6Uy"/>
+                            <constraint firstItem="amH-Jv-sLi" firstAttribute="bottom" secondItem="hr5-EH-SY2" secondAttribute="bottom" id="wRa-98-Pz3"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="ni8-Ng-Frp"/>
+                    <connections>
+                        <outlet property="segmentedControlOutlet" destination="Dgc-NZ-vnp" id="twT-Jq-IVE"/>
+                        <outlet property="tableView" destination="hr5-EH-SY2" id="L8i-Xy-6Wy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vO2-3d-BUJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="141.22137404580153" y="733.80281690140851"/>
+        </scene>
+        <!--Meals-->
+        <scene sceneID="7Gs-zQ-7aU">
+            <objects>
+                <navigationController storyboardIdentifier="MealsNC" automaticallyAdjustsScrollViewInsets="NO" id="VpG-C3-Hzf" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Meals" image="meal" id="sXj-4o-CQ7"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="wUX-RG-RHJ">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="SUG-cQ-CBW" kind="relationship" relationship="rootViewController" id="HLv-0R-yZB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xsV-ny-Cz5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-785.49618320610682" y="733.80281690140851"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="meal" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

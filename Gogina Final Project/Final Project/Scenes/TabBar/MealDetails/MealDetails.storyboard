@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Phudu-SemiBold.ttf">
+            <string>Phudu-SemiBold</string>
+        </array>
+        <array key="Phudu-VariableFont_wght.ttf">
+            <string>Phudu-Light_Medium</string>
+            <string>Phudu-Light_Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Meal Details View Controller-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="MealDetails" id="Y6W-OH-hqX" customClass="MealDetailsViewController" customModule="Final_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="1200"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="eb7-JH-iRk">
+                                <rect key="frame" x="10" y="64" width="373" height="37"/>
+                                <fontDescription key="fontDescription" name="Phudu-SemiBold" family="Phudu" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Grs-mq-XrG">
+                                <rect key="frame" x="116.66666666666669" y="111" width="160" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="ZcL-fy-cP9"/>
+                                    <constraint firstAttribute="height" constant="160" id="dUg-Ca-68o"/>
+                                </constraints>
+                            </imageView>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wn-mK-ZBn">
+                                <rect key="frame" x="0.0" y="281" width="393" height="885"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rNP-N1-9v6">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="274.33333333333331"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingredients" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SQc-ni-caB">
+                                                <rect key="frame" x="10" y="64.333333333333314" width="373" height="34.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Phudu-Light_Medium" family="Phudu" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uze-vu-wDx">
+                                                <rect key="frame" x="10" y="113.6666666666667" width="373" height="30.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="Phudu-Light_Regular" family="Phudu" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preparation" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TSj-zT-rNy">
+                                                <rect key="frame" x="10" y="164.33333333333331" width="373" height="34.333333333333343"/>
+                                                <fontDescription key="fontDescription" name="Phudu-Light_Medium" family="Phudu" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Efh-hY-hqN">
+                                                <rect key="frame" x="10" y="213.66666666666669" width="373" height="30.666666666666657"/>
+                                                <fontDescription key="fontDescription" name="Phudu-Light_Regular" family="Phudu" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cal:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a2e-4H-5Ot">
+                                                <rect key="frame" x="9.9999999999999964" y="10" width="46.666666666666657" height="34.333333333333336"/>
+                                                <fontDescription key="fontDescription" name="Phudu-Light_Medium" family="Phudu" pointSize="28"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nct-uz-Fi5">
+                                                <rect key="frame" x="66.666666666666671" y="12.000000000000002" width="60" height="30.666666666666671"/>
+                                                <fontDescription key="fontDescription" name="Phudu-Light_Regular" family="Phudu" pointSize="25"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="heart" translatesAutoresizingMaskIntoConstraints="NO" id="9Rc-fV-kg2">
+                                                <rect key="frame" x="343" y="12.333333333333314" width="30" height="30"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="30" id="JhP-0n-8bg"/>
+                                                    <constraint firstAttribute="width" constant="30" id="bIO-rd-ijb"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="a2e-4H-5Ot" firstAttribute="leading" secondItem="rNP-N1-9v6" secondAttribute="leading" constant="10" id="1HT-K9-iGG"/>
+                                            <constraint firstItem="Efh-hY-hqN" firstAttribute="leading" secondItem="rNP-N1-9v6" secondAttribute="leading" constant="10" id="3L0-ak-1vH"/>
+                                            <constraint firstItem="nct-uz-Fi5" firstAttribute="centerY" secondItem="a2e-4H-5Ot" secondAttribute="centerY" id="6fN-Yd-CDb"/>
+                                            <constraint firstAttribute="trailing" secondItem="uze-vu-wDx" secondAttribute="trailing" constant="10" id="6sR-fQ-SfT"/>
+                                            <constraint firstItem="SQc-ni-caB" firstAttribute="leading" secondItem="rNP-N1-9v6" secondAttribute="leading" constant="10" id="Fen-aU-iQm"/>
+                                            <constraint firstItem="TSj-zT-rNy" firstAttribute="leading" secondItem="rNP-N1-9v6" secondAttribute="leading" constant="10" id="JpB-gu-5Cp"/>
+                                            <constraint firstItem="9Rc-fV-kg2" firstAttribute="centerY" secondItem="nct-uz-Fi5" secondAttribute="centerY" id="P43-Aq-ier"/>
+                                            <constraint firstAttribute="trailing" secondItem="9Rc-fV-kg2" secondAttribute="trailing" constant="20" id="Rud-ib-bDN"/>
+                                            <constraint firstAttribute="trailing" secondItem="SQc-ni-caB" secondAttribute="trailing" constant="10" id="Sv8-5p-CJO"/>
+                                            <constraint firstItem="uze-vu-wDx" firstAttribute="top" secondItem="SQc-ni-caB" secondAttribute="bottom" constant="15" id="Ttg-9t-NlU"/>
+                                            <constraint firstItem="nct-uz-Fi5" firstAttribute="leading" secondItem="a2e-4H-5Ot" secondAttribute="trailing" constant="10" id="XT9-Oe-SrA"/>
+                                            <constraint firstItem="uze-vu-wDx" firstAttribute="leading" secondItem="rNP-N1-9v6" secondAttribute="leading" constant="10" id="aip-Pf-mfH"/>
+                                            <constraint firstItem="SQc-ni-caB" firstAttribute="top" secondItem="a2e-4H-5Ot" secondAttribute="bottom" constant="20" id="cPU-6D-b5C"/>
+                                            <constraint firstItem="TSj-zT-rNy" firstAttribute="top" secondItem="uze-vu-wDx" secondAttribute="bottom" constant="20" id="e3P-KM-iZt"/>
+                                            <constraint firstAttribute="trailing" secondItem="TSj-zT-rNy" secondAttribute="trailing" constant="10" id="icn-S4-UKn"/>
+                                            <constraint firstItem="a2e-4H-5Ot" firstAttribute="top" secondItem="rNP-N1-9v6" secondAttribute="top" constant="10" id="oYb-Lp-Aqn"/>
+                                            <constraint firstAttribute="trailing" secondItem="Efh-hY-hqN" secondAttribute="trailing" constant="10" id="pQy-sm-czQ"/>
+                                            <constraint firstAttribute="bottom" secondItem="Efh-hY-hqN" secondAttribute="bottom" constant="30" id="tKX-aq-eGw"/>
+                                            <constraint firstItem="Efh-hY-hqN" firstAttribute="top" secondItem="TSj-zT-rNy" secondAttribute="bottom" constant="15" id="xTt-fI-xfj"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="rNP-N1-9v6" secondAttribute="bottom" id="Dr0-f5-qDR"/>
+                                    <constraint firstItem="rNP-N1-9v6" firstAttribute="width" secondItem="7Wn-mK-ZBn" secondAttribute="width" id="Ezf-2e-PlE"/>
+                                    <constraint firstItem="rNP-N1-9v6" firstAttribute="top" secondItem="7Wn-mK-ZBn" secondAttribute="top" id="IRz-66-HDe"/>
+                                    <constraint firstItem="rNP-N1-9v6" firstAttribute="height" secondItem="7Wn-mK-ZBn" secondAttribute="height" priority="250" id="MVb-wt-ZCf"/>
+                                    <constraint firstItem="rNP-N1-9v6" firstAttribute="leading" secondItem="7Wn-mK-ZBn" secondAttribute="leading" id="WMY-Dv-2P7"/>
+                                    <constraint firstAttribute="trailing" secondItem="rNP-N1-9v6" secondAttribute="trailing" id="hsT-hw-40H"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="A4q-Lh-yeN"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="NAG-nN-r2c"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="eb7-JH-iRk" secondAttribute="trailing" constant="10" id="274-FK-CX9"/>
+                            <constraint firstItem="Grs-mq-XrG" firstAttribute="top" secondItem="eb7-JH-iRk" secondAttribute="bottom" constant="10" id="32f-pM-a0K"/>
+                            <constraint firstItem="7Wn-mK-ZBn" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="Rrn-IY-d2r"/>
+                            <constraint firstItem="7Wn-mK-ZBn" firstAttribute="top" secondItem="Grs-mq-XrG" secondAttribute="bottom" constant="10" id="T07-A9-Xw9"/>
+                            <constraint firstItem="7Wn-mK-ZBn" firstAttribute="bottom" secondItem="vDu-zF-Fre" secondAttribute="bottom" id="bTQ-m0-TSh"/>
+                            <constraint firstItem="7Wn-mK-ZBn" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="fOX-cx-Tgm"/>
+                            <constraint firstItem="eb7-JH-iRk" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="10" id="hB5-7I-cgX"/>
+                            <constraint firstItem="eb7-JH-iRk" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" constant="5" id="tQz-g7-lXB"/>
+                            <constraint firstItem="Grs-mq-XrG" firstAttribute="centerX" secondItem="5EZ-qb-Rvc" secondAttribute="centerX" id="wGM-Vh-S4g"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="393" height="1200"/>
+                    <connections>
+                        <outlet property="calLabel" destination="a2e-4H-5Ot" id="ZNs-iy-9bS"/>
+                        <outlet property="caloriesLabel" destination="nct-uz-Fi5" id="3fS-k2-GRp"/>
+                        <outlet property="favoriteCheckImageView" destination="9Rc-fV-kg2" id="tWz-vq-qie"/>
+                        <outlet property="ingrLabel" destination="SQc-ni-caB" id="ldn-La-NAJ"/>
+                        <outlet property="ingredientsLabel" destination="uze-vu-wDx" id="ExQ-kX-I5x"/>
+                        <outlet property="instructionLabel" destination="Efh-hY-hqN" id="Ce1-Qe-Cth"/>
+                        <outlet property="mealImageView" destination="Grs-mq-XrG" id="GMm-bx-1Bh"/>
+                        <outlet property="nameLabel" destination="eb7-JH-iRk" id="3ym-1C-XXW"/>
+                        <outlet property="prepLabel" destination="TSj-zT-rNy" id="Bit-HF-x0Y"/>
+                        <outlet property="viewForScroll" destination="rNP-N1-9v6" id="COx-SV-HNF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="heart" width="21" height="19"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
